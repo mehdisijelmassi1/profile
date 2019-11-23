@@ -2,6 +2,10 @@ body {
   background-color: #F7F9FC;
 }
 
+.title-mehdi h2 {
+  padding-left: 50px;
+}
+
 h1 {
   color: #575F7D;
   font-family: 'Roboto', sans-serif;
@@ -29,7 +33,7 @@ a:hover {
 }
 
 #container {
-  width: 500px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -38,6 +42,57 @@ a:hover {
   bottom: 17px;
   left: 50px;
   float: right;
+}
+
+.pro-content-logo {
+  display: flex;
+}
+
+.logo-companies {
+  position: relative;
+  right: 20px;
+}
+
+#logo-cubyn {
+  position: relative;
+  right: 20px;
+  bottom: -45px;
+}
+
+#logo-clovis {
+  position: relative;
+  right: 20px;
+  bottom: -45px;
+}
+
+#logo-cgi {
+  position: relative;
+  right: 20px;
+  bottom: -30px;
+}
+
+#logo-axway {
+  position: relative;
+  right: 20px;
+  bottom: -45px;
+}
+
+#logo-skema {
+  position: relative;
+  right: 20px;
+  bottom: -45px;
+}
+
+#logo-tbs {
+  position: relative;
+  right: 20px;
+  bottom: -45px;
+}
+
+#logo-wagon {
+  position: relative;
+  right: 20px;
+  bottom: -45px;
 }
 
 .card-white {
@@ -54,8 +109,8 @@ a:hover {
 }
 
 
-.btn-blue {
-  background-color: #6B72E1;
+.btn-rose {
+  background-color: #fd7276;
   color: white;
   padding: 16px;
   line-height: 50px;
@@ -72,6 +127,10 @@ a:hover {
   display: inline-block;
   padding: 0px 20px;
   font-size: 30px;
+}
+
+.pro-educ {
+  display: flex;
 }
 
 @media (max-width: 960px) {
