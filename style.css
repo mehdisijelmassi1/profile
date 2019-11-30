@@ -1,5 +1,5 @@
 body {
-  background-color: #F7F9FC;
+  background-color: #e8e8e8;
 }
 
 .title-mehdi h2 {
@@ -32,9 +32,9 @@ a:hover {
   opacity: 0.3;
 }
 
-.container {
-  width: 500px;
-  margin: 0 auto;
+.container-curriculum {
+  width: 600px;
+  margin: auto;
 }
 
 #logo {
@@ -44,56 +44,7 @@ a:hover {
   float: right;
 }
 
-.pro-content-logo {
-  display: flex;
-}
 
-.logo-companies {
-  position: relative;
-  right: 20px;
-}
-
-#logo-cubyn {
-  position: relative;
-  right: 20px;
-  bottom: -45px;
-}
-
-#logo-clovis {
-  position: relative;
-  right: 20px;
-  bottom: -45px;
-}
-
-#logo-cgi {
-  position: relative;
-  right: 20px;
-  bottom: -30px;
-}
-
-#logo-axway {
-  position: relative;
-  right: 20px;
-  bottom: -45px;
-}
-
-#logo-skema {
-  position: relative;
-  right: 20px;
-  bottom: -45px;
-}
-
-#logo-tbs {
-  position: relative;
-  right: 20px;
-  bottom: -45px;
-}
-
-#logo-wagon {
-  position: relative;
-  right: 20px;
-  bottom: -45px;
-}
 
 .card-white {
   background-color: white;
@@ -118,35 +69,139 @@ a:hover {
   font-weight: bold;
 }
 
-.list-inline {
+:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.cards {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: 10px repeat(6, calc(50% - var(--gutter) * 2)) 10px;
+  grid-template-rows: minmax(150px, 1fr);
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.5 * var(--gutter));
+}
+
+.cards:before,
+.cards:after {
+  content: '';
+}
+
+/* Hide scrollbar */
+.hide-scroll {
+  overflow-y: hidden;
+  margin-bottom: calc(-.1 * var(--gutter));
+}
+
+ul {
   list-style: none;
+  width: 900px;
+  height: 400px;
   padding-left: 0px;
 }
 
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-  font-size: 30px;
+.card-content {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 0px 10px 0 10px;
+  border-radius: 4px;
 }
 
-.pro-educ {
-  display: flex;
+.card-content:first-child {
+  box-shadow: 0px 0 0px 0px #333;
+  margin-left: 100px;
 }
 
-@media (max-width: 960px) {
-  #container {
-    width: 500px;
-  }
+#description-cubyn {
+  position: relative;
+  top: 20px;
 }
-@media (max-width: 720px) {
-  #container {
-    width: 400px;
-  }
+
+#description-clovis {
+  position: relative;
+  top: 20px;
 }
-@media (max-width: 540px) {
-  #container {
-    width: 300px;
-  }
+
+#description-cgi {
+  position: relative;
+  top: -25px;
+}
+
+#description-axway {
+  position: relative;
+  top: 20px;
+}
+
+#clovis-logo {
+  position: relative;
+  top: 10px;
 }
 
 
+#cgi-logo {
+  position: relative;
+  top: -24px;
+}
+
+#job-title-cgi {
+  position: relative;
+  top: -50px;
+}
+
+#job-date-cgi {
+  position: relative;
+  top: -50px;
+}
+
+.job-date {
+  font-size: 10px;
+  color: #55555;
+}
+
+#test-0 {
+  position: relative;
+  left: -270px;
+}
+
+#test-1 {
+  position: relative;
+  left: -230px;
+}
+
+#test-2 {
+  position: relative;
+  left: -230px;
+}
+
+#test-3 {
+  position: relative;
+  left: -230px;
+}
+
+#test-4 {
+  position: relative;
+  left: -230px;
+}
+
+#test-5 {
+  position: relative;
+  left: -230px;
+}
