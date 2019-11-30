@@ -32,8 +32,8 @@ a:hover {
   opacity: 0.3;
 }
 
-#container {
-  width: 900px;
+.container {
+  width: 500px;
   margin: 0 auto;
 }
 
