@@ -1,5 +1,7 @@
 body {
   background-color: #e8e8e8;
+  background-image: url(background.svg);
+  background-size: cover;
 }
 
 .title-mehdi h2 {
@@ -25,7 +27,7 @@ a {
 }
 
 h2 {
-  color: #3700FF;
+  color: #575F7D;
 }
 
 a:hover {
@@ -53,6 +55,7 @@ a:hover {
   border-radius: 4px;
   margin: 20px 0px;
   text-align: center;
+  border-left: 4px solid #fd7276;
 }
 
 .circle-image {
@@ -95,7 +98,7 @@ a:hover {
   grid-template-columns: 10px repeat(6, calc(50% - var(--gutter) * 2)) 10px;
   grid-template-rows: minmax(150px, 1fr);
 
-  overflow-x: scroll;
+  overflow: scroll;
   scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * var(--gutter));
   margin-bottom: calc(-.5 * var(--gutter));
@@ -112,7 +115,7 @@ a:hover {
   margin-bottom: calc(-.1 * var(--gutter));
 }
 
-ul {
+.app ul {
   list-style: none;
   width: 900px;
   height: 400px;
@@ -124,11 +127,12 @@ ul {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   padding: 0px 10px 0 10px;
   border-radius: 4px;
+  margin-top: 5px;
 }
 
-/*.card-content:first-child {
-  box-shadow: 0px 0 0px 0px #333;
-  margin-left: 100px;
+
+/*.card-content:last-child {
+  margin-right: 400px;
 }*/
 
 #description-cubyn {
@@ -201,8 +205,88 @@ ul {
   position: relative;
   left: -230px;
 }
+*/
 
-#test-5 {
+#test-5 img {
+  height: 46vh;
+  margin-left: -10px;
+  width: fit-content;
+}
+
+.educational {
+  background-color: white;
+  padding: 1px 30px 30px 30px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  list-style: none;
+  border-left: 4px solid #fd7276;
+}
+
+.educational > h4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.school-logo {
   position: relative;
-  left: -230px;
-}*/
+  top: 65px;
+  right: 60px;
+}
+
+.school-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar i {
+  font-size: 10px;
+}
+
+.calendar {
+  font-size: 10px;
+  font-weight: lighter;
+  position: relative;
+  top: 7px;
+  right: -70px;
+}
+
+.location i {
+  font-size: 10px;
+
+}
+
+.location {
+  font-size: 10px;
+  font-weight: lighter;
+  position: relative;
+  top: 7px;
+}
+
+#calendar-tbs {
+  font-size: 10px;
+  font-weight: lighter;
+  position: relative;
+  top: 5px;
+  right: -20px;
+}
+
+#marker-tbs {
+  font-size: 10px;
+  font-weight: lighter;
+  position: relative;
+  top: 5px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 48px;
+  opacity: 0.7;
+  transition: 0.5s
+}
