@@ -208,9 +208,10 @@ a:hover {
 */
 
 #test-5 img {
-  height: 46vh;
-  margin-left: -10px;
-  width: fit-content;
+  height: 51vh;
+  margin-left: -11px;
+  width: 106%;
+  border-radius: 4px;
 }
 
 .educational {
@@ -292,7 +293,26 @@ a:hover {
 }
 
 .background-cv {
-  background : url(http://register.mkcl.org/enquiry/static/assets/images/undraw_code_thinking_1jeh.svg);
+  background : url(https://cdn.kickoffpages.com/assets/119743/i9ghwobp9m5z8f782mtc/undraw_going_up_ttm5.svg);
   background-size: cover;
   object-fit: scale-down;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
