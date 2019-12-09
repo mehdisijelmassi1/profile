@@ -292,7 +292,7 @@ a:hover {
 }
 
 .background-cv {
-  background : url(https://help.omneo.io/hc/article_attachments/360002420516/undraw_product_tour_foyt.svg);
+  background : url(http://register.mkcl.org/enquiry/static/assets/images/undraw_code_thinking_1jeh.svg);
   background-size: cover;
-  background-position: center;
+  object-fit: scale-down;
 }
