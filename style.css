@@ -28,10 +28,16 @@ a {
 
 h2 {
   color: #575F7D;
+  font-weight: bolder;
 }
 
 a:hover {
   opacity: 0.3;
+}
+
+h4 {
+  color: #575F7D;
+  font-weight: lighter;
 }
 
 .container-curriculum {
@@ -208,7 +214,7 @@ a:hover {
 */
 
 #test-5 img {
-  height: 51vh;
+  height: 50vh;
   margin-left: -11px;
   width: 106%;
   border-radius: 4px;
