@@ -64,6 +64,10 @@ h4 {
   border-left: 4px solid #fd7276;
 }
 
+.card-white > h4 {
+  padding-top: 20px;
+}
+
 .circle-image {
   border-radius: 50%;
 }
@@ -214,7 +218,7 @@ h4 {
 */
 
 #test-5 img {
-  height: 50vh;
+  height: 46vh;
   margin-left: -11px;
   width: 106%;
   border-radius: 4px;
@@ -302,6 +306,11 @@ h4 {
   background : url(https://cdn.kickoffpages.com/assets/119743/i9ghwobp9m5z8f782mtc/undraw_going_up_ttm5.svg);
   background-size: cover;
   object-fit: scale-down;
+}
+
+.job-date {
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 @media (max-width: 960px) {
